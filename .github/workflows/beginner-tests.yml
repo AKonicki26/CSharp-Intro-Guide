@@ -21,5 +21,8 @@ jobs:
     needs: setup-dotnet
     
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
       - name: Run Beginner Tests
         run: dotnet test .\Tests\BeginnerProjectWrapper\BeginnerProjectWrapper.csproj
