@@ -17,8 +17,11 @@ jobs:
         run: dotnet restore
   
   run-beginner-tests:
+    
     runs-on: windows-latest
     
     steps:
+      - name: Where am I
+        run: cd
       - name: Run Beginner Tests
         run: dotnet test .\Tests\BeginnerProjectWrapper\BeginnerProjectWrapper.csproj
