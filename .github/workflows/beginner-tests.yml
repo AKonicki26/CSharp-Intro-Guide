@@ -1,0 +1,24 @@
+on:
+  push
+jobs:
+  setup-dotnet:
+    runs-on: 
+      windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Set up .Net
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.x'
+          
+      - name: Install Dependencies
+        run: dotnet restore
+  
+  run-beginner-tests:
+    runs-on: windows-latest
+    
+    steps:
+      - name: Run Beginner Tests
+        run: dotnet test .\Tests\BeginnerProjectWrapper\BeginnerProjectWrapper.csproj
