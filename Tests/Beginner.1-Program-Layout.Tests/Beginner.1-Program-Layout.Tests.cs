@@ -8,7 +8,7 @@ public class ProgramLayoutTests
     [Test]
     public void ClassProgramTests()
     {
-        string assemblyPath = "Beginner.Program-Layout.dll";
+        string assemblyPath = "Beginner.1-Program-Layout.dll";
         string className = "Beginner.Program_Layout.Program";
         string methodName = "Main";
         
