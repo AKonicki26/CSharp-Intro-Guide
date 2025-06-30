@@ -14,7 +14,7 @@ before moving on to the next.
 For experiences programmers new to C#/.NET, it is recommended to still start with the beginner series of projects
 to understand how C#/.NET handles concepts you may already be familiar with.
 
-Guides for how to complete each project are included in README.md files within each project.
+Guides for how to complete each project are included in Markdown (.md) files within each project.
 They will not solve the projects for you, but they will give you an understanding of the concepts required to solve
 each project, 
 as well as links to additional documentation where you can learn more about each concept if you are still struggling.
