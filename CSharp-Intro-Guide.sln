@@ -10,8 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Beginner", "Beginner", "{95
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beginner.Program-Layout.Tests", "Tests\Beginner.Program-Layout.Tests\Beginner.Program-Layout.Tests.csproj", "{B02A77CD-ED1C-4A43-88CF-D21D8DE9AC56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeginnerProjectWrapper", "Tests\BeginnerProjectWrapper\BeginnerProjectWrapper.csproj", "{21F01C4D-B10B-4756-919C-16356914B93B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,15 +24,10 @@ Global
 		{B02A77CD-ED1C-4A43-88CF-D21D8DE9AC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B02A77CD-ED1C-4A43-88CF-D21D8DE9AC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B02A77CD-ED1C-4A43-88CF-D21D8DE9AC56}.Release|Any CPU.Build.0 = Release|Any CPU
-		{21F01C4D-B10B-4756-919C-16356914B93B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21F01C4D-B10B-4756-919C-16356914B93B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21F01C4D-B10B-4756-919C-16356914B93B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21F01C4D-B10B-4756-919C-16356914B93B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A51C4C44-6D94-4651-9F58-AFB2C67512A7} = {E2341C1D-11C4-40D1-814F-8953013ADADB}
 		{9584936B-497E-4543-BC57-2AF5C052D7DD} = {B0EA8A21-985F-4D1E-9E57-F82A8C7D2D7F}
 		{B02A77CD-ED1C-4A43-88CF-D21D8DE9AC56} = {9584936B-497E-4543-BC57-2AF5C052D7DD}
-		{21F01C4D-B10B-4756-919C-16356914B93B} = {9584936B-497E-4543-BC57-2AF5C052D7DD}
 	EndGlobalSection
 EndGlobal
