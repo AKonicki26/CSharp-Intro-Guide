@@ -22,3 +22,14 @@ as well as links to additional documentation where you can learn more about each
 If you are still struggling with a given concept, solutions for each project are provided in the
 [solutions branch](https://github.com/AKonicki26/CSharp-Intro-Guide/tree/solutions) of the repository.
 This can be used to see how each project is supposed to work to reference during your own learning.
+
+## Testing
+To test a project, open a terminal to the repository root. 
+Then, to test whichever project you are currently working on, run the command 
+`dotnet test Tests/[project name].Tests`, replacing [project name] for the name of the project you wish to test.
+
+For example, if you want to test `Beginner.1-Project-Layout`, enter the command 
+`dotnet test Tests/Beginner.1-Project-Layout.Tests`.
+
+The test suite is set up to ensure your code functions as expected, without needing to match the solutions line by line.
+Error messages will also appear to describe the reasons the tests do not pass with your code.
