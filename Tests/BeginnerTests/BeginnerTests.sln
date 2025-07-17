@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beginner.1-Program-Layout.T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beginner.2-Variables.Tests", "..\Beginner.2-Variables.Tests\Beginner.2-Variables.Tests.csproj", "{9CF06078-18AF-4BAF-9C1E-B14A3C304A85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beginner.3-Methods.Tests", "..\Beginner.3-Methods.Tests\Beginner.3-Methods.Tests.csproj", "{BA60138C-4B0C-44E0-A8E3-4D61C4507514}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{9CF06078-18AF-4BAF-9C1E-B14A3C304A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9CF06078-18AF-4BAF-9C1E-B14A3C304A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9CF06078-18AF-4BAF-9C1E-B14A3C304A85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA60138C-4B0C-44E0-A8E3-4D61C4507514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA60138C-4B0C-44E0-A8E3-4D61C4507514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA60138C-4B0C-44E0-A8E3-4D61C4507514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA60138C-4B0C-44E0-A8E3-4D61C4507514}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
