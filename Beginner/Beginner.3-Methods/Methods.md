@@ -54,3 +54,59 @@ public static void Main()
 
 If you've follow the steps up until here, you should be able to run the program and see the output in the console!
 
+## Methods with Parameters
+Method signatures can have special **parameters** to pass information into them as **arguments**.
+When defining parameters, you must specify the type of the parameter and the name to call it, 
+exactly like defining a variable. Then, when calling the method, values are passed into the method as arguments
+to be used within the method body.
+
+You've actually already been using a method with arguments, `Console.WriteLine`! 
+When you call Console.WriteLine, you pass in the value you want to be written to the console inside the parenthesis!
+
+This is also where we define parameters in our **Method Signature**, so it's very easy to know what to pass to a method 
+when using them!
+
+Let's create a new function that will take in two numbers, and print the result of their addition.
+For now, use the same base method signature as our other two methods, changing the name to something relevant.
+
+Then, inside the parenthesis, we'll want to add two `int` parameters. 
+This can be done by declaring two comma seperated integer variables inside the parenthesis of the method signature, 
+such as the following:
+
+```csharp
+public static void Sum(int numberOne, int numberTwo) 
+{
+    
+}
+```
+
+Then, inside the method body, we can use these variables and add them together!
+Try calling this method from inside the main method, passing in two numbers of your choosing.
+
+## Return types
+Often times, we will want to use methods to get new information from the work we did inside the method body.
+For this, we can use a **return value**.
+The `return` keyword specifies two things:
+1. Whatever value follows the `return` keyword will be sent out of the method to where it was called
+2. The method body will not continue after `return` has been used.
+
+So, rather than directly output the console, why don't we return the result of our addition?
+We can change the method signature of our adding method to change the return type from `void` to `int`, 
+since the result of adding two integers will always be an integer.
+
+Then, instead of printing our addition directly to the console, we can return the result!
+We are then able to take the value from this method and assign it to a variable directly, such as the following:
+```csharp
+int newNumber = Sum(5, 6);
+```
+
+And, if we then ran
+```csharp
+Console.WriteLine(newNumber);
+```
+
+we should see that 11 gets printing to the Console!
+
+
+
+

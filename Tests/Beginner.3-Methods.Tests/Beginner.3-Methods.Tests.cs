@@ -58,7 +58,12 @@ public class Tests
     {
         using var consoleOutput = new ConsoleOutputCatcher();
         Program.OurVariable = input;
-        foreach (var method in _createdMethods)
+        // only call methods with no parameters or return type
+        foreach (
+            var method in _createdMethods.Where(method =>
+                method.GetParameters().Length == 0 && method.ReturnType == typeof(void)
+            )
+        )
             method.Invoke(null, null);
 
         StringAssert.Contains(input, consoleOutput.ToString());
@@ -76,5 +81,37 @@ public class Tests
         Program.Main();
 
         StringAssert.Contains(input, consoleOutput.ToString());
+    }
+
+    [Test]
+    [TestCase(1, 2)]
+    [TestCase(5, 6)]
+    [TestCase(200, 350)]
+    public void Program_AdditionMethod_AddsSuccessfully(int val1, int val2)
+    {
+        // only call methods with 2 int parameters and an int return type
+        var possibleSumMethods = _createdMethods.Where(method =>
+            method.GetParameters().Count(param => param.ParameterType == typeof(int)) == 2
+            && method.ReturnType == typeof(int)
+        );
+
+        if (!possibleSumMethods.Any())
+        {
+            Assert.Fail($"There are no methods that match the signature of an addition method!");
+            return;
+        }
+
+        foreach (var method in possibleSumMethods)
+        {
+            object? returnVal = method.Invoke(null, [val1, val2]);
+
+            if (returnVal == null)
+                Assert.Fail($"Method {method.Name} returned null!");
+
+            if (returnVal is int sum)
+            {
+                Assert.That(sum, Is.EqualTo(val1 + val2));
+            }
+        }
     }
 }
