@@ -106,7 +106,3 @@ Console.WriteLine(newNumber);
 ```
 
 we should see that 11 gets printing to the Console!
-
-
-
-
