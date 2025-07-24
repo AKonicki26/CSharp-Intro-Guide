@@ -24,6 +24,9 @@ however we will not change any for the time being.
 | **Name**       | The name of the method to be used when calling it                                                                       |
 | **Parameters** | Optional data to be used within the function body. If parameters are defined, they must be used when calling the method |
 
+Our Main Method's signature is `public static void Main()`. `public static` are the method's modifiers, 
+`void` is the return type, `Main` is the method's name, and there are no parameters.
+
 ### Method Body 
 A method body defines what the method actually does. 
 The method body is the actual code that is run when the method is called.
@@ -36,4 +39,18 @@ Take the **Method Signature** we used for the Main Method, `public static void M
 You want the name of the method to be relevant to what it performs. 
 
 For this tutorial, we'll have a method we make print the value of the variable `OurVariable` defined in the `Program` class.
-Within the **method body**
+Within the **method body**, print the value of `OurVariable` by passing it into the `Console.WriteLine` function
+just as we've done before.
+
+To call our new method, type the name of the method followed by empty paranthesis inside the main method body.
+So, if you named your method `MyMethod()`, your main function would look like the following:
+
+```cs
+public static void Main() 
+{
+    MyMethod();
+}
+```
+
+If you've follow the steps up until here, you should be able to run the program, and see the output in the console!
+
