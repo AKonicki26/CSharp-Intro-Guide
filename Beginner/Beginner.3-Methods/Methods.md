@@ -15,7 +15,7 @@ Every method MUST have both a signature and a body to be complete.
 
 ### Method Signature
 A method signature defines how the method exists. It is composed of several parts, 
-however we will not change any for the time being.
+however we will not change any besides the name for the time being.
 
 | Syntax         | Meaning                                                                                                                 |
 |----------------|-------------------------------------------------------------------------------------------------------------------------|
