@@ -42,7 +42,7 @@ For this tutorial, we'll have a method we make print the value of the variable `
 Within the **method body**, print the value of `OurVariable` by passing it into the `Console.WriteLine` function
 just as we've done before.
 
-To call our new method, type the name of the method followed by empty paranthesis inside the main method body.
+To call our new method, type the name of the method followed by empty parenthesis inside the main method body.
 So, if you named your method `MyMethod()`, your main function would look like the following:
 
 ```cs
@@ -52,5 +52,5 @@ public static void Main()
 }
 ```
 
-If you've follow the steps up until here, you should be able to run the program, and see the output in the console!
+If you've follow the steps up until here, you should be able to run the program and see the output in the console!
 
